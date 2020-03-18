@@ -83,6 +83,25 @@ body {
 
 
 
+.update-movie,
+.update-movie input {
+    display: block;
+}
+
+.update-movie form {
+    margin-top: 40px;
+}
+
+.update-movie input {
+    text-indent: 10px;
+    border: 0;
+    height: 30px;
+    width: 280px;
+    margin: 10px 0;
+    background-color: #efefef;
+}
+
+
 .delete-button,
 .update-button {
     position: relative;

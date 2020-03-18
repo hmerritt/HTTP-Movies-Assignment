@@ -30,7 +30,7 @@ function Movie({ addToSavedList, movieList, setMovieList }) {
 
     //  Delete movie
     const deleteMovie = () => {
-        //  Movie idea
+        //  Movie id
         const id = match.params.id;
 
         //
