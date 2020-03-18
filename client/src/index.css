@@ -83,7 +83,8 @@ body {
 
 
 
-.delete-button {
+.delete-button,
+.update-button {
     position: relative;
     cursor: pointer;
     color: #fff;
@@ -93,4 +94,8 @@ body {
     text-align: center;
     border: 1px solid grey;
     background-color: #FF4367;
+}
+
+.update-button {
+    background-color: #375BFF;
 }

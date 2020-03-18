@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { useRouteMatch, useHistory } from "react-router-dom";
 import MovieCard from "./MovieCard";
@@ -51,6 +51,13 @@ function Movie({ addToSavedList, movieList, setMovieList }) {
     return (
         <div className="save-wrapper">
             <MovieCard movie={movie} />
+
+            {/* Update movie */}
+            <Link to={`/update-movie/${match.params.id}`} style={{ color: "#fff", textDecoration: 'none' }}>
+                <div className="update-button">
+                    Update
+                </div>
+            </Link>
 
             {/* Delete movie */}
             <div className="delete-button" onClick={deleteMovie}>
